@@ -1,0 +1,375 @@
+[
+  {
+    "number": "1",
+    "answer": "D",
+    "subject": "Bilgisayar",
+    "question": "<pre><code class=\"hljs language-c\"><span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">()</span> {\n<span class=\"hljs-type\">int</span> i = <span class=\"hljs-number\">0</span>;\n<span class=\"hljs-type\">int</span> topl = <span class=\"hljs-number\">0</span>;\n<span class=\"hljs-keyword\">for</span> (i = <span class=\"hljs-number\">0</span>; i&#x3C;<span class=\"hljs-number\">12</span>;i++) {\ntopl = topl + i;\n}\n<span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">\"%d\"</span>, topl);\n}\n</code></pre>\n<p>Yukarıdaki programın çıktısı şıklardan hangisinde doğru olarak verilmiştir?</p>",
+    "answers": {
+      "A": "36",
+      "B": "42",
+      "C": "55",
+      "D": "66",
+      "E": "78"
+    }
+  },
+  {
+    "number": "2",
+    "answer": "B",
+    "subject": "Bilgisayar",
+    "question": "<pre><code class=\"hljs language-c\"><span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">()</span> {\n<span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">\"%d\"</span>, !<span class=\"hljs-number\">3</span> + !<span class=\"hljs-number\">2</span> + !<span class=\"hljs-number\">1</span> + !<span class=\"hljs-number\">0</span>);\n}\n</code></pre>\n<p>Yukarıdaki programın çıktısı şıklardan hangisinde doğru olarak verilmiştir?</p>",
+    "answers": {
+      "A": "0",
+      "B": "1",
+      "C": "2",
+      "D": "Derleme hatası verir",
+      "E": "Çalışma hatası verir"
+    }
+  },
+  {
+    "number": "3",
+    "answer": "A",
+    "subject": "Bilgisayar",
+    "question": "<pre><code class=\"hljs language-c\"><span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">()</span> {\n<span class=\"hljs-type\">char</span> str[] = <span class=\"hljs-string\">\"abcISBOdef!\"</span>;\n<span class=\"hljs-type\">char</span> res[<span class=\"hljs-number\">256</span>];\n<span class=\"hljs-type\">int</span> i = <span class=\"hljs-number\">0</span>;\n<span class=\"hljs-keyword\">do</span> {\nres[i] = str[i] >= <span class=\"hljs-string\">'a'</span> &#x26;&#x26;\nstr[i] &#x3C;= <span class=\"hljs-string\">'z'</span> &#x26;&#x26; i &#x26; <span class=\"hljs-number\">1</span>\n? str[i] + <span class=\"hljs-string\">'A'</span> - <span class=\"hljs-string\">'a'</span> : str[i];\n} <span class=\"hljs-keyword\">while</span> (str[i++]);\n<span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">\"%s\\n\"</span>, res);\n}\n</code></pre>",
+    "answers": {
+      "A": "aBc+dEf!",
+      "B": "abc-def+",
+      "C": "AbC+DeF!"
+    }
+  },
+  {
+    "number": "4",
+    "answer": "B",
+    "subject": "Bilgisayar",
+    "question": "<pre><code class=\"hljs language-c\"><span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">()</span> {\n<span class=\"hljs-type\">int</span> a = <span class=\"hljs-number\">5</span>;\n<span class=\"hljs-type\">int</span> b = <span class=\"hljs-number\">20</span>;\n<span class=\"hljs-type\">int</span> c = <span class=\"hljs-number\">2</span>*a-b;\n<span class=\"hljs-keyword\">switch</span>(c) {\n<span class=\"hljs-keyword\">case</span> <span class=\"hljs-number\">-35</span>:\n<span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">\"0\"</span>);\n<span class=\"hljs-keyword\">case</span> <span class=\"hljs-number\">-10</span>:\n<span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">\"1\"</span>);\n<span class=\"hljs-keyword\">break</span>;\n<span class=\"hljs-keyword\">case</span> <span class=\"hljs-number\">0</span>:\n<span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">\"2\"</span>);\n<span class=\"hljs-keyword\">case</span> <span class=\"hljs-number\">10</span>:\n<span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">\"3\"</span>);\n<span class=\"hljs-keyword\">default</span>:\n<span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">\"4\"</span>);\n}\n<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span>;\n}\n</code></pre>\n<p>Yukarıda verilen programın çıktısı ne olur?</p>",
+    "answers": {
+      "A": "0",
+      "B": "1",
+      "C": "23",
+      "D": "34",
+      "E": "4"
+    }
+  },
+  {
+    "number": "5",
+    "answer": "B",
+    "subject": "Bilgisayar",
+    "question": "<pre><code class=\"hljs language-c\"><span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">()</span> {\n<span class=\"hljs-type\">char</span> *dizi[<span class=\"hljs-number\">3</span>] = { <span class=\"hljs-string\">\"matematik\"</span>, <span class=\"hljs-string\">\"bilgisayar\"</span>, <span class=\"hljs-string\">\"fizik\"</span>};\n<span class=\"hljs-type\">int</span> i,j;\n<span class=\"hljs-type\">int</span> a = <span class=\"hljs-number\">1</span>;\n<span class=\"hljs-keyword\">for</span> (i = <span class=\"hljs-number\">0</span>; i &#x3C; <span class=\"hljs-number\">5</span>; i ++) {\n<span class=\"hljs-keyword\">if</span> (dizi[<span class=\"hljs-number\">0</span>][i] == dizi[<span class=\"hljs-number\">1</span>][i] ||\ndizi[<span class=\"hljs-number\">1</span>][i] == dizi[<span class=\"hljs-number\">2</span>][i] ||\ndizi[<span class=\"hljs-number\">0</span>][i] == dizi[<span class=\"hljs-number\">2</span>][i]) {\na = a*<span class=\"hljs-number\">2</span>;\n}\n}\n<span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">\"%d\"</span>, a);\n<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span>;\n}\n</code></pre>\n<p>Yukarıda verilen programın çıktısı ne olur?</p>",
+    "answers": {
+      "A": "1",
+      "B": "2",
+      "C": "4",
+      "D": "8",
+      "E": "16"
+    }
+  },
+  {
+    "number": "6",
+    "answer": "A",
+    "subject": "Bilgisayar",
+    "question": "<pre><code class=\"hljs language-c\"><span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">()</span>{\n<span class=\"hljs-type\">double</span> a = <span class=\"hljs-number\">11</span>/<span class=\"hljs-number\">2</span> +<span class=\"hljs-number\">5</span>/<span class=\"hljs-number\">2.0</span> + <span class=\"hljs-number\">3</span>/<span class=\"hljs-number\">12</span> +  <span class=\"hljs-number\">3.0</span>;\n<span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">\"%lf\"</span>, a);\n}\n</code></pre>\n<p>Yukarıda verilen program çıktı olarak ne üretir?</p>",
+    "answers": {
+      "A": "10.5",
+      "B": "11",
+      "C": "11.25",
+      "D": "12",
+      "E": "Hiçbiri"
+    }
+  },
+  {
+    "number": "7",
+    "answer": "C",
+    "subject": "Bilgisayar",
+    "question": "<pre><code class=\"hljs language-c\"><span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">()</span>\n{\n<span class=\"hljs-type\">int</span> a = <span class=\"hljs-number\">0</span>, b = <span class=\"hljs-number\">0</span>, c = <span class=\"hljs-number\">0</span>;\n<span class=\"hljs-type\">int</span> i;\n<span class=\"hljs-keyword\">for</span> (i = <span class=\"hljs-number\">0</span>; i &#x3C; <span class=\"hljs-number\">1000</span>; i++) {\n<span class=\"hljs-keyword\">if</span> (i % <span class=\"hljs-number\">3</span> == <span class=\"hljs-number\">0</span>) {\na += <span class=\"hljs-number\">1</span>;\n}\n<span class=\"hljs-keyword\">if</span> (i % <span class=\"hljs-number\">5</span> == <span class=\"hljs-number\">0</span>) {\nb += <span class=\"hljs-number\">1</span>;\n}\n<span class=\"hljs-keyword\">if</span> (i % <span class=\"hljs-number\">15</span> == <span class=\"hljs-number\">0</span>) {\nc += <span class=\"hljs-number\">1</span>;\n}\n}\n}\n</code></pre>\n<p>Yukarıdaki programın çıktısı ne olur?</p>",
+    "answers": {
+      "A": "324",
+      "B": "420",
+      "C": "467",
+      "D": "511",
+      "E": "559"
+    }
+  },
+  {
+    "number": "8",
+    "answer": "A",
+    "subject": "Bilgisayar",
+    "question": "<pre><code class=\"hljs language-c\"><span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">()</span> {\n<span class=\"hljs-type\">char</span> a[<span class=\"hljs-number\">8</span>] = <span class=\"hljs-string\">\"istanbul\"</span>;\n<span class=\"hljs-type\">char</span> b[<span class=\"hljs-number\">5</span>] = <span class=\"hljs-string\">\"bilim\"</span>;\n<span class=\"hljs-type\">char</span> c[<span class=\"hljs-number\">13</span>] = <span class=\"hljs-string\">\"olimpiyatlari\"</span>;\n<span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">\"%c%c%c\"</span>, a[<span class=\"hljs-number\">0</span>]<span class=\"hljs-number\">-32</span>, b[<span class=\"hljs-number\">0</span>]<span class=\"hljs-number\">-32</span>, c[<span class=\"hljs-number\">0</span>]<span class=\"hljs-number\">-32</span>);\n<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span>;\n}\n</code></pre>\n<p>Yukarıda verilen program çıktı olarak ne üretir?</p>",
+    "answers": {
+      "A": "IBO",
+      "B": "ISBO",
+      "C": "iStAnBuL",
+      "D": "isbiol",
+      "E": "İsbıo"
+    }
+  },
+  {
+    "number": "9",
+    "answer": "A",
+    "subject": "Bilgisayar",
+    "question": "<pre><code class=\"hljs language-c\">inf <span class=\"hljs-title function_\">func</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> x)</span> {\n<span class=\"hljs-keyword\">return</span> x%<span class=\"hljs-number\">2</span> ? x++ : --x;\n}\n<span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">()</span> {\n<span class=\"hljs-type\">int</span> i = <span class=\"hljs-number\">0</span>, p = <span class=\"hljs-number\">0</span>;\n<span class=\"hljs-keyword\">while</span> (i &#x3C; <span class=\"hljs-number\">10</span>) {\np = p + func(i);\ni++;\n}\n<span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">\"%d\"</span>, p);\n<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span>\n}\n</code></pre>\n<p>Yukarıdaki programın çıktısı ne olur?</p>",
+    "answers": {
+      "A": "40",
+      "B": "41",
+      "C": "43",
+      "D": "45",
+      "E": "50"
+    }
+  },
+  {
+    "number": "10",
+    "answer": "B",
+    "subject": "Bilgisayar",
+    "question": "<pre><code class=\"hljs language-c\"><span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">f</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> x)</span> {\n<span class=\"hljs-type\">int</span> a = <span class=\"hljs-number\">0</span>;\n<span class=\"hljs-keyword\">for</span>(<span class=\"hljs-type\">int</span> i = <span class=\"hljs-number\">1</span>; i &#x3C;= x; i++) {\n<span class=\"hljs-keyword\">if</span> (x%i == <span class=\"hljs-number\">0</span>) {\na = a + <span class=\"hljs-number\">1</span>;\n}\n}\n}\n<span class=\"hljs-keyword\">return</span> a;\n}\n</code></pre>\n<p>Yukarıda verilen fonksiyonun amacı ne olabilir?</p>",
+    "answers": {
+      "A": "Bir sayının asal bölenlerin sayısını bulmak",
+      "B": "Bir sayının pozitif bölenlerin sayısını bulmak",
+      "C": "Bir sayının bölenlerinin toplamını bulmak",
+      "D": "Bir sayının karesinin pozitif bölenlerinin sayısını bulmak",
+      "E": "Bir sayının çift bölenlerinin sayısını bulmak"
+    }
+  },
+  {
+    "number": "1",
+    "answer": "C",
+    "subject": "Matematik",
+    "question": "<p>$\\frac{(2^6 - 3^2)(2^6 + 3^2)}{5}$ işleminin sonucu aşağıdakilerden hangisidir?</p>",
+    "answers": {
+      "A": "403",
+      "B": "603",
+      "C": "803",
+      "D": "1003",
+      "E": "1203"
+    }
+  },
+  {
+    "number": "2",
+    "answer": "E",
+    "subject": "Matematik",
+    "question": "<p>Mahpeyker'in kitaplığının her bir rafında, raf sayısının iki katı kadar kitap bulunuyor. Kitaplarının sayısı 1800 olan Mahpeyker'in kitaplıgında kaç raf vardır?</p>",
+    "answers": {
+      "A": "9",
+      "B": "15",
+      "C": "18",
+      "D": "24",
+      "E": "30"
+    }
+  },
+  {
+    "number": "3",
+    "answer": "A",
+    "subject": "Matematik",
+    "question": "<p>Bir kutuda 12 kırmızı 28 mavi bilye, bir torbada 18 kırmızı 22 mavi bilye vardır. Kutudan ve torbadan birer tane bilye seçiliyor. İki bilyenin de kırmızı olma ihtimali $a/b$ sadeleşmeyen kesrine eşittir. Buna göre $a + b$ kaçtır?</p>",
+    "answers": {
+      "A": "227",
+      "B": "229",
+      "C": "230",
+      "D": "231",
+      "E": "232"
+    }
+  },
+  {
+    "number": "4",
+    "answer": "B",
+    "subject": "Matematik",
+    "question": "<p>Rakamlar kümesinin alt kümelerinin kaç tanesinde 5 bulunur, 3'ün katı bulunmaz?</p>",
+    "answers": {
+      "A": "16",
+      "B": "32",
+      "C": "64",
+      "D": "128",
+      "E": "Hiçbiri"
+    }
+  },
+  {
+    "number": "5",
+    "answer": "D",
+    "subject": "Matematik",
+    "question": "<p>Ahmet ardışık beş sayı belirliyor ve bu sayıların 7 ile bölünmesinden elde edilen kalanları topluyor. Elde ettiği toplamı tahtaya yazan Ahmet yine ardışık beş sayı belirleyip benzer şekilde elde ettiği toplamı tahtaya yazıyor. Mümkün olan tüm fraklı toplamları elde edene kadar böylece devam ediyor.</p>\n<p>Ahmet tahtaya kaç farklı sayı yazmıştır?</p>",
+    "answers": {
+      "A": "3",
+      "B": "4",
+      "C": "6",
+      "D": "7",
+      "E": "Sonsuz çoklukta"
+    }
+  },
+  {
+    "number": "6",
+    "answer": "B",
+    "subject": "Matematik",
+    "question": "<p>Ahmet ardışık beş sayı belirliyor ve bu sayıların 7 ile bölünmesinden elde edilen kalanları topluyor. Elde ettiği toplamı tahtaya yazan Ahmet yine ardışık beş sayı belirleyip benzer şekilde elde ettiği toplamı tahtaya yazıyor. Mümkün olan tüm fraklı toplamları elde edene kadar böylece devam ediyor.</p>\n<p>Ahmet'in tahtaya yazdığı sayılar arasında en fazla kaç tane ardışık sayı vardır?</p>",
+    "answers": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "Sonsuz Çoklukta"
+    }
+  },
+  {
+    "number": "7",
+    "answer": "B",
+    "subject": "Matematik",
+    "question": "<p>2022'den küçük ve 11'in tam katı olan pozitif sayıların kaç tanesi 5 ile tam bölünür?\nD\n44</p>",
+    "answers": {
+      "A": "32",
+      "B": "36",
+      "C": "40",
+      "E": "48"
+    }
+  },
+  {
+    "number": "8",
+    "answer": "B",
+    "subject": "Matematik",
+    "question": "<p>$10^n - 1$ sayısının rakamları toplamı 2025 olduğuna göre $n$ kaçtır</p>",
+    "answers": {
+      "A": "222",
+      "B": "225",
+      "C": "252",
+      "D": "255",
+      "E": "Hiçbiri"
+    }
+  },
+  {
+    "number": "9",
+    "answer": "B",
+    "subject": "Matematik",
+    "question": "<p>Bir $𝕆$ öperatörü, sıfırdan farklı $x,y$ sayıları verildğiğnde bu sayıların kareleri toplamının bu sayıların çarpımına bölüyor ve sonuç $𝕆_{x,y}$ ile gösteriliyor. Başka bir  $𝕆'$ operatörü sıfırdan faklı $x, y$ sayıları verildiğinde bunların toplamlarının karesini alıyor ve sonuç $𝕆'<em>{x,y}$ ile gösteriliyor.\nBuna göre, $\\frac{𝕆'</em>{x,x}}{𝕆_{y,y}+2}$ ifadesi 72,242,625,2022,20000 sayılarından kaç tanesine eşit olamaz?</p>",
+    "answers": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    }
+  },
+  {
+    "number": "10",
+    "answer": "A",
+    "subject": "Matematik",
+    "question": "<p>Bir satranç tahtasından ne ortak kenarı ne ortak köşesi olan iki kare kaç farklı şekilde seçilebir?</p>",
+    "answers": {
+      "A": "1806",
+      "B": "1828",
+      "C": "1836",
+      "D": "1874",
+      "E": "1898"
+    }
+  },
+  {
+    "number": "11",
+    "answer": "B",
+    "subject": "Matematik",
+    "question": "<p>Ahmet sayıları göstermek için on rakam yerine beş tane rakam kullanmaya karar veriyor. Kurduğu sayı sisteminde 1'in ardıiığı 2, 2'nin ardışığı 3, 3'ün ardışığı 4, 4'ün ardışığı 10 ile gösteriliyor.</p>\n<p>Kullandığımız on rakamlı sayı sisteminde 126 ile gösterilen çokluk, Ahmet'in kurduğu sistemde aşağıdakilerden hangisiyle gösterilir?</p>",
+    "answers": {
+      "A": "404",
+      "B": "1001",
+      "C": "1444",
+      "E": "Hiçbiri"
+    }
+  },
+  {
+    "number": "12",
+    "answer": "E",
+    "subject": "Matematik",
+    "question": "<p>Ahmet sayıları göstermek için on rakam yerine beş tane rakam kullanmaya karar veriyor. Kurduğu sayı sisteminde 1'in ardıiığı 2, 2'nin ardışığı 3, 3'ün ardışığı 4, 4'ün ardışığı 10 ile gösteriliyor.\nAhmet'in kurduğu sistemde 12421 ile gösterilen sayı, kullandığımız on rakamlı sayı sisteminde aşağıdakilerden hangisiyle gösterilir?</p>",
+    "answers": {
+      "A": "689",
+      "B": "698",
+      "C": "869",
+      "D": "896",
+      "E": "986"
+    }
+  },
+  {
+    "number": "13",
+    "answer": "A",
+    "subject": "Matematik",
+    "question": "<p>Düz bir sırada yan yana ve aynı yöne bakan 7 sandalyeye oturan, yaşları birbirinden farklı Aylin, Burçin, Ceylin, Dilan, Elvan, Ferhan ve Gülcan isimli 7 kız kardeşin sol taraflarında sırasıyla 2, 1, 2, $x$, 4, 5, 1 tane ablası; sağ taraflarında sırasıyla 0, 2, 3, $y$, 0, 1, $z$ tane ablası oturuyor.</p>\n<p>$x + y + z$ kaçtır?</p>",
+    "answers": {
+      "A": "0",
+      "B": "1",
+      "C": "2",
+      "D": "3",
+      "E": "4"
+    }
+  },
+  {
+    "number": "14",
+    "answer": "C",
+    "subject": "Matematik",
+    "question": "<p>Düz bir sırada yan yana ve aynı yöne bakan 7 sandalyeye oturan, yaşları birbirinden farklı Aylin, Burçin, Ceylin, Dilan, Elvan, Ferhan ve Gülcan isimli 7 kız kardeşin sol taraflarında sırasıyla 2, 1, 2, $x$, 4, 5, 1 tane ablası; sağ taraflarında sırasıyla 0, 2, 3, $y$, 0, 1, $z$ tane ablası oturuyor.\nBurçin ile Ferhan'ın arasında kaç kişi oturuyor?</p>",
+    "answers": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    }
+  },
+  {
+    "number": "15",
+    "answer": "D",
+    "subject": "Matematik",
+    "question": "<p>Düz bir sırada yan yana ve aynı yöne bakan 7 sandalyeye oturan, yaşları birbirinden farklı Aylin, Burçin, Ceylin, Dilan, Elvan, Ferhan ve Gülcan isimli 7 kız kardeşin sol taraflarında sırasıyla 2, 1, 2, $x$, 4, 5, 1 tane ablası; sağ taraflarında sırasıyla 0, 2, 3, $y$, 0, 1, $z$ tane ablası oturuyor.\nOrtada kim oturuyor?</p>",
+    "answers": {
+      "A": "Aylin",
+      "B": "Ceylin",
+      "C": "Ferhan",
+      "D": "Gülcan",
+      "E": "Hiçbiri"
+    }
+  },
+  {
+    "number": "16",
+    "answer": "E",
+    "subject": "Matematik",
+    "question": "<p>Düz bir sırada yan yana ve aynı yöne bakan 7 sandalyeye oturan, yaşları birbirinden farklı Aylin, Burçin, Ceylin, Dilan, Elvan, Ferhan ve Gülcan isimli 7 kız kardeşin sol taraflarında sırasıyla 2, 1, 2, $x$, 4, 5, 1 tane ablası; sağ taraflarında sırasıyla 0, 2, 3, $y$, 0, 1, $z$ tane ablası oturuyor.\nEn büyük ikinci kardeş kimdir?</p>",
+    "answers": {
+      "A": "Aylin",
+      "B": "Burçin",
+      "C": "Elvan",
+      "D": "Ferhan",
+      "E": "Gülcan"
+    }
+  },
+  {
+    "number": "17",
+    "answer": "B",
+    "subject": "Matematik",
+    "question": "<p>Aşağıdaki şemada bir grup, birbirini tanıyan üyeler arasında bağlantılarla verilmiştir. Şema hazırlanırken üyeleri gösteren köşelere, üyelerin yaşları yazılacağına arkadaşlarının yaşların toplamı yazılmıştır.\n![[s_17.png]]\nGrupta kaç kişinin yaşı kesin olarak bellidir?</p>",
+    "answers": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7",
+      "E": "Hiçbiri"
+    }
+  },
+  {
+    "number": "18",
+    "answer": "A",
+    "subject": "Matematik",
+    "question": "<p>Aşağıdaki şemada bir grup, birbirini tanıyan üyeler arasında bağlantılarla verilmiştir. Şema hazırlanırken üyeleri gösteren köşelere, üyelerin yaşları yazılacağına arkadaşlarının yaşların toplamı yazılmıştır.\n![[s_17.png]]\nGruptakilerin yaşları toplamı en az kaçtır?</p>",
+    "answers": {
+      "A": "61",
+      "B": "62",
+      "C": "63",
+      "D": "64",
+      "E": "65"
+    }
+  },
+  {
+    "number": "19",
+    "answer": "D",
+    "subject": "Matematik",
+    "question": "<p>Ülkede eğri burun hastalığını kontrol altına alabilmek için karantina tedbirleri uygulanmaktadır. Hastalığın ilk rastlandığı bölgeye A kodu atanıyor. Bu Bölgenin karantina alarm seviyesi 4 olarak belirleniyor. Karantina tedbirleri her şehirde, komşularından en yüksek alarm seviyesinin bir düşüğü olarak uygulanıyor. Örnekte Sülistandaki şehirlerin alarm seviyeleri toplamı 12'dir.</p>\n<p>![[s_19.png]]</p>\n<p>Aşağıdaki adalardan hangisinin karantina seviyesi toplamı en fazladır?</p>",
+    "answers": {
+      "A": "![[s_19_a.png]]",
+      "B": "![[s_19_b.png]]",
+      "C": "![[s_19_c.png]]",
+      "D": "![[s_19_d.png]]",
+      "E": "![[s_19_e.png]]"
+    }
+  }
+]
